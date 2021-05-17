@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SiluetaYa.Views.PrimeraFase.Page2"
+                          BackgroundColor="#78992B"
+             NavigationPage.HasNavigationBar="false">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image Margin="50" Source="Relog.png"></Image>
+        <Label TextColor="white" Text="Con Silueta YA, 
+siempre ganas.
+Descúbrelo.
+"></Label>
+        <Button Text="INICIAR REGISTRO" BackgroundColor="#F7A015" TextColor="White" Clicked="Button_Clicked"></Button>
+    </StackLayout>
+</ContentPage>

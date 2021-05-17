@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SiluetaYa.Views.PrimeraFase.Page4"
+             NavigationPage.HasNavigationBar="false">
+    <StackLayout>
+        <Image Source="Logo.png" WidthRequest="150"></Image>
+        <Label Text="Ingresa tus datos"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" Margin="0,0,0,100" />
+        <Entry Placeholder="Email" HorizontalOptions="CenterAndExpand" WidthRequest="300"></Entry>
+        <Entry Placeholder="Telefono" HorizontalOptions="CenterAndExpand" WidthRequest="300"></Entry>
+        <Entry Placeholder="Contraseña" HorizontalOptions="CenterAndExpand" WidthRequest="300"></Entry>
+        <Button CornerRadius="20" Text="Inicia Registro" BackgroundColor="#F7A015" Clicked="Button_Clicked"></Button>
+
+    </StackLayout>
+</ContentPage>

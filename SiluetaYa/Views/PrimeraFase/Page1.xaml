@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SiluetaYa.Views.PrimeraFase.Page1"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundImageSource="Fon1.jpg">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Button Clicked="Button_Clicked"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent"></Button>
+    </StackLayout>
+
+</ContentPage>

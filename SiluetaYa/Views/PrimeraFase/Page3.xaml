@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SiluetaYa.Views.PrimeraFase.Page3"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="#5D810A">
+    <StackLayout VerticalOptions="CenterAndExpand" >
+        <Image Source="Logo.png" WidthRequest="250" HorizontalOptions="CenterAndExpand"></Image>
+        <Button CornerRadius="20" WidthRequest="100" Text="INICIA YA" BackgroundColor="#95C323" BorderColor="White" BorderWidth="2" Clicked="Button_Clicked"></Button>
+        <Button CornerRadius="20" Text="VENDE YA" BackgroundColor="#F7A015" WidthRequest="250"></Button>
+    </StackLayout>
+</ContentPage>
