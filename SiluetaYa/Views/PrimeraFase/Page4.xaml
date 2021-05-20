@@ -4,14 +4,17 @@
              x:Class="SiluetaYa.Views.PrimeraFase.Page4"
              NavigationPage.HasNavigationBar="false">
     <StackLayout>
-        <Image Source="Logo.png" WidthRequest="150"></Image>
-        <Label Text="Ingresa tus datos"
-                VerticalOptions="Start" 
-                HorizontalOptions="CenterAndExpand" Margin="0,0,0,100" />
-        <Entry Placeholder="Email" HorizontalOptions="CenterAndExpand" WidthRequest="300"></Entry>
-        <Entry Placeholder="Telefono" HorizontalOptions="CenterAndExpand" WidthRequest="300"></Entry>
-        <Entry Placeholder="Contraseña" HorizontalOptions="CenterAndExpand" WidthRequest="300"></Entry>
-        <Button CornerRadius="20" Text="Inicia Registro" BackgroundColor="#F7A015" Clicked="Button_Clicked"></Button>
+        <Image Margin="20" Source="Logo.png" WidthRequest="70"></Image>
+        <Label TextColor="#95C323"
+               FontSize="18"
+               Text="Ingresa tus datos"
+               VerticalOptions="Start" 
+               HorizontalOptions="CenterAndExpand" Margin="20, 30" />
+        <Entry Placeholder="Email" HorizontalOptions="CenterAndExpand" WidthRequest="270"></Entry>
+        <Entry Placeholder="Teléfono" HorizontalOptions="CenterAndExpand" WidthRequest="270"></Entry>
+        <Entry Placeholder="Contraseña" HorizontalOptions="CenterAndExpand" WidthRequest="270"></Entry>
+        <Button CornerRadius="30" Text="Inicia Registro" BackgroundColor="#F7A015" Clicked="Button_Clicked" HeightRequest="50" 
+                WidthRequest="60" Margin="70, 40"></Button>
 
     </StackLayout>
 </ContentPage>

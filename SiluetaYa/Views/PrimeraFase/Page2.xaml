@@ -4,12 +4,14 @@
              x:Class="SiluetaYa.Views.PrimeraFase.Page2"
                           BackgroundColor="#78992B"
              NavigationPage.HasNavigationBar="false">
-    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <Image Margin="50" Source="Relog.png"></Image>
-        <Label TextColor="white" Text="Con Silueta YA, 
-siempre ganas.
-Descúbrelo.
-"></Label>
-        <Button Text="INICIAR REGISTRO" BackgroundColor="#F7A015" TextColor="White" Clicked="Button_Clicked"></Button>
+    <StackLayout Margin="40">
+        <Label HorizontalOptions="CenterAndExpand" Padding="10" TextColor="white" Text="Bienvenido" FontSize="35" FontAttributes="Bold"></Label>
+        <Image Margin="40" Source="Relog.png"></Image>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Label TextColor="white" Text="Con Silueta YA," FontSize="25"></Label>
+            <Label TextColor="white" Text="siempre ganas." FontSize="25"></Label>
+            <Label TextColor="white" Text="Descúbrelo." FontSize="25"></Label>
+        </StackLayout>
+        <Button Margin="30" CornerRadius="30" Text="INICIAR REGISTRO" BackgroundColor="#F7A015" TextColor="White" Clicked="Button_Clicked"></Button>
     </StackLayout>
 </ContentPage>

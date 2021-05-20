@@ -4,9 +4,11 @@
              x:Class="SiluetaYa.Views.PrimeraFase.Page3"
              NavigationPage.HasNavigationBar="false"
              BackgroundColor="#5D810A">
-    <StackLayout VerticalOptions="CenterAndExpand" >
-        <Image Source="Logo.png" WidthRequest="250" HorizontalOptions="CenterAndExpand"></Image>
-        <Button CornerRadius="20" WidthRequest="100" Text="INICIA YA" BackgroundColor="#95C323" BorderColor="White" BorderWidth="2" Clicked="Button_Clicked"></Button>
-        <Button CornerRadius="20" Text="VENDE YA" BackgroundColor="#F7A015" WidthRequest="250"></Button>
+    <StackLayout>
+        <Image Source="Logo.png" WidthRequest="150" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Margin="20,50"></Image>
+        <Button CornerRadius="30" HeightRequest="60" WidthRequest="60" BorderWidth="1" TranslationY="2" Text="INICIA YA" 
+                BackgroundColor="#95C323" Clicked="Button_Clicked"></Button>
+        <Button CornerRadius="30" HeightRequest="60" WidthRequest="60" BorderWidth="1" TranslationY="60" Text="VENDE YA" 
+                BackgroundColor="#F7A015" ></Button>
     </StackLayout>
 </ContentPage>
