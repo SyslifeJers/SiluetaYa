@@ -1,15 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.ComponentModel;
+using SiluetaYa.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SiluetaYa.Views
 {
-    public partial class AboutPage : ContentPage
+    public partial class Perfil : ContentPage
     {
-        public AboutPage()
+        public Perfil()
         {
             InitializeComponent();
+            BindingContext = new PerfilViewModel();
         }
         private void Button_Clicked(object sender, EventArgs e)
         {
@@ -17,7 +23,7 @@ namespace SiluetaYa.Views
         }
         private void Button_Clicked2(object sender, EventArgs e)
         {
-            Shell.Current.GoToAsync("Page5");
+            Navigation.PushAsync(new ItemsPage());
         }
     }
 }

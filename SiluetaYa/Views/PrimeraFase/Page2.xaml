@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SiluetaYa.Views.PrimeraFase.Page2"
-                          BackgroundColor="#78992B"
+             BackgroundColor="#78992B"
              NavigationPage.HasNavigationBar="false">
     <StackLayout Margin="40">
         <Label HorizontalOptions="CenterAndExpand" Padding="10" TextColor="white" Text="Bienvenido" FontSize="35" FontAttributes="Bold"></Label>
@@ -10,7 +10,7 @@
         <StackLayout HorizontalOptions="CenterAndExpand">
             <Label TextColor="white" Text="Con Silueta YA," FontSize="25"></Label>
             <Label TextColor="white" Text="siempre ganas." FontSize="25"></Label>
-            <Label TextColor="white" Text="Descúbrelo." FontSize="25"></Label>
+            <Label HorizontalOptions="CenterAndExpand" TextColor="white" Text="Descúbrelo." FontSize="25"></Label>
         </StackLayout>
         <Button Margin="30" CornerRadius="30" Text="INICIAR REGISTRO" BackgroundColor="#F7A015" TextColor="White" Clicked="Button_Clicked"></Button>
     </StackLayout>

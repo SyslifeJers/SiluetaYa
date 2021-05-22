@@ -6,7 +6,7 @@
     <StackLayout>
         <Image Margin="20" Source="Logo.png" WidthRequest="70"></Image>
         <Label TextColor="#95C323"
-               FontSize="18"
+               FontSize="20"
                Text="Ingresa tus datos"
                VerticalOptions="Start" 
                HorizontalOptions="CenterAndExpand" Margin="20, 30" />

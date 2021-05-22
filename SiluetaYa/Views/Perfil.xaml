@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SiluetaYa.Views.Perfil"
+             xmlns:vm="clr-namespace:SiluetaYa.ViewModels"
+             BackgroundColor="#C1D66D"
+             Padding="20,20">
+
+    <ContentPage.BindingContext>
+        <vm:PerfilViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Image Source="Logo.png" WidthRequest="80" HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="Start" ></Image>
+        <Label Text="Maria Snow" TextColor="#454F63" HorizontalOptions="CenterAndExpand" 
+               Margin="0,20,0,10" FontSize="18"></Label>
+
+        <Frame CornerRadius="15">
+        <Grid BackgroundColor="White" >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="Tallas Reducidas" Grid.Column="0" Padding="15,5" TextColor="#000000" FontSize="10"></Label>
+            <Image Source="Logo.png" Grid.Column="1" ></Image>
+            <Label Text="Peso Perdido" Grid.Column="2" Padding="15,15" TextColor="#000000" FontSize="10"></Label>
+        </Grid>
+        </Frame>
+        <Frame CornerRadius="15" Margin="0,15">
+            <Grid BackgroundColor="White">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Button Text="Ver Progreso" Grid.Column="0" Grid.Row="0" BackgroundColor="White" 
+                    TextColor="#000000" FontSize="9"></Button>
+                <Button Text="Testimoniales" Grid.Column="1" Grid.Row="0" BackgroundColor="White" 
+                    TextColor="#000000" FontSize="8"></Button>
+                <Button Text="Blog" Grid.Column="2" Grid.Row="0" BackgroundColor="White" 
+                    TextColor="#000000" FontSize="9"></Button>
+                <Button Text="Comparte" Grid.Column="0" Grid.Row="1" BackgroundColor="White" 
+                    TextColor="#000000" FontSize="9"></Button>
+                <Button Text="Configuración" Grid.Column="1" Grid.Row="1" BackgroundColor="White" 
+                    TextColor="#000000" FontSize="8"></Button>
+                <Button Text="Notificaciones" Grid.Column="2" Grid.Row="1" BackgroundColor="White" 
+                    TextColor="#000000" FontSize="8"></Button>
+            </Grid>
+        </Frame>
+
+        <Button CornerRadius="30" HeightRequest="50" WidthRequest="70" Margin="15, 0" 
+                TranslationY="20" Text="PRÓXIMA TOMA / HOY 17:30 P.M." FontSize="17" FontAttributes="Bold"
+                BackgroundColor="#95C323" Clicked="Button_Clicked"></Button>
+        <Button CornerRadius="30" HeightRequest="50" WidthRequest="70" Margin="15, 10" 
+                TranslationY="25" Text="VENDE YA" FontSize="18" FontAttributes="Bold" BackgroundColor="#E9540D" ></Button>
+
+    </StackLayout>
+
+
+</ContentPage>

@@ -26,6 +26,7 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <ContentView Padding="5,40,5,10" VerticalOptions="FillAndExpand">
                     <DatePicker x:Name="startDatePicker"
+                    Grid.Row="1"
                     Format="dddd, MMMM dd"
                     TextColor="White"
                     />
@@ -33,17 +34,22 @@
             </StackLayout>
         </StackLayout>
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label Text="Añade tu suplemento y crearemos una alerta diaria para que realices tus tomas a tiempo" 
-                       FontSize="Title" TextColor="White"
-                       HorizontalOptions="Center"
-                       TranslationY="140"/>
+            <StackLayout Orientation="Vertical" Padding="60,24,30,24" Spacing="10">
+                <Label Text="Añade tu suplemento y" FontSize="16" TextColor="White"
+                       HorizontalOptions="Center" TranslationY="140"/>
+                <Label Text="crearemos una alerta" FontSize="16" TextColor="White"
+                       HorizontalOptions="Center" TranslationY="140"/>
+                <Label Text="diaria para que realices" FontSize="16" TextColor="White"
+                       HorizontalOptions="Center" TranslationY="140"/>
+                <Label Text="tus tomas a tiempo" FontSize="16" TextColor="White"
+                       HorizontalOptions="Center" TranslationY="140"/>
                 <Button Margin="30" Text="Iniciar registro"
                         TranslationY="150"
-                        Command="{Binding OpenWebCommand}"
                         BackgroundColor="#FC9225"
                         CornerRadius="30"
-                        TextColor="White" />
+                        TextColor="White" 
+                        Clicked="Button_Clicked2"
+                        />
             </StackLayout>
         </ScrollView>
     </Grid>

@@ -31,9 +31,9 @@
 
     <TabBar>
         <ShellContent Title="Inicio" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Visítanos NA" Icon="icon_about.png" />
-        <ShellContent Title="Tienda NA" Icon="icon_about.png"  />
-        <ShellContent Title="Perfil NA" Icon="icon_about.png"   />
+        <ShellContent Title="Visítanos" Icon="icon_about.png" />
+        <ShellContent Title="Tienda" Icon="icon_about.png"  Route="Store" ContentTemplate="{DataTemplate local:Store}"/>
+        <ShellContent Title="Perfil" Icon="icon_about.png" Route="Perfil" ContentTemplate="{DataTemplate local:Perfil}" />
         <ShellContent Title="Más" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>
 
