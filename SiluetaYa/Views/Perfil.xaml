@@ -3,11 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SiluetaYa.Views.Perfil"
              xmlns:vm="clr-namespace:SiluetaYa.ViewModels"
-             BackgroundColor="#C1D66D"
-             Padding="20,20">
+             BackgroundColor="#C1D66D">
 
     <ContentPage.BindingContext>
-        <vm:PerfilViewModel />
+        <vm:AboutViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.Resources>
@@ -16,14 +15,16 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <StackLayout>
-        <Image Source="Logo.png" WidthRequest="80" HorizontalOptions="CenterAndExpand" 
-               VerticalOptions="Start" ></Image>
+    <StackLayout >
+        <Frame CornerRadius="30" Margin="150,0,150,11" BackgroundColor="White" BorderColor="#C1D66D">
+        <Image Source="Logo.png" HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="Start" TranslationY="15"></Image>
+        </Frame>
         <Label Text="Maria Snow" TextColor="#454F63" HorizontalOptions="CenterAndExpand" 
-               Margin="0,20,0,10" FontSize="18"></Label>
+               FontSize="18"></Label>
 
-        <Frame CornerRadius="15">
-        <Grid BackgroundColor="White" >
+        <Frame CornerRadius="15" Margin="10,0">
+            <Grid BackgroundColor="White" >
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -32,48 +33,56 @@
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="55"/>
+                <RowDefinition Height="65"/>
             </Grid.RowDefinitions>
 
-            <Label Text="Tallas Reducidas" Grid.Column="0" Padding="15,5" TextColor="#000000" FontSize="10"></Label>
+            <Label Text="5" TextColor="#78992B" Grid.Column="0"
+                   FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
+            <Label Text="Tallas 
+                   Reducidas" Grid.Column="0" Padding="20,27,10,5" TextColor="#000000" 
+                   FontSize="10" HorizontalOptions="CenterAndExpand"></Label>
             <Image Source="Logo.png" Grid.Column="1" ></Image>
-            <Label Text="Peso Perdido" Grid.Column="2" Padding="15,15" TextColor="#000000" FontSize="10"></Label>
-        </Grid>
+                <Label Text="20" TextColor="#78992B" Grid.Column="2"
+                   FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Label>
+                <Label Text="Peso 
+                   Perdido" Grid.Column="2" Padding="27,27,15,5" TextColor="#000000" 
+                   FontSize="10"></Label>
+            </Grid>
         </Frame>
-        <Frame CornerRadius="15" Margin="0,15">
+        <Frame CornerRadius="15" Margin="10,20" Padding="0,2">
             <Grid BackgroundColor="White">
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
 
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="83"/>
+                    <RowDefinition Height="79"/>
                 </Grid.RowDefinitions>
 
                 <Button Text="Ver Progreso" Grid.Column="0" Grid.Row="0" BackgroundColor="White" 
-                    TextColor="#000000" FontSize="9"></Button>
+                    TextColor="#000000" FontSize="9" ImageSource="icon_about.png" ContentLayout="Top, 10"></Button>
                 <Button Text="Testimoniales" Grid.Column="1" Grid.Row="0" BackgroundColor="White" 
-                    TextColor="#000000" FontSize="8"></Button>
+                    TextColor="#000000" FontSize="9" ImageSource="icon_about.png" ContentLayout="Top, 10"></Button>
                 <Button Text="Blog" Grid.Column="2" Grid.Row="0" BackgroundColor="White" 
-                    TextColor="#000000" FontSize="9"></Button>
+                    TextColor="#000000" FontSize="9" ImageSource="icon_about.png" ContentLayout="Top, 10"></Button>
                 <Button Text="Comparte" Grid.Column="0" Grid.Row="1" BackgroundColor="White" 
-                    TextColor="#000000" FontSize="9"></Button>
+                    TextColor="#000000" FontSize="9" ImageSource="icon_about.png" ContentLayout="Top, 10"></Button>
                 <Button Text="Configuración" Grid.Column="1" Grid.Row="1" BackgroundColor="White" 
-                    TextColor="#000000" FontSize="8"></Button>
+                    TextColor="#000000" FontSize="9" ImageSource="icon_about.png" ContentLayout="Top, 10"></Button>
                 <Button Text="Notificaciones" Grid.Column="2" Grid.Row="1" BackgroundColor="White" 
-                    TextColor="#000000" FontSize="8"></Button>
+                    TextColor="#000000" FontSize="9" ImageSource="icon_about.png" ContentLayout="Top, 10"></Button>
             </Grid>
         </Frame>
 
-        <Button CornerRadius="30" HeightRequest="50" WidthRequest="70" Margin="15, 0" 
-                TranslationY="20" Text="PRÓXIMA TOMA / HOY 17:30 P.M." FontSize="17" FontAttributes="Bold"
+        <Button CornerRadius="30" HeightRequest="50" WidthRequest="70" Margin="10, 0" 
+                TranslationY="15" Text="PRÓXIMA TOMA / HOY 17:30 P.M." FontSize="17" FontAttributes="Bold"
                 BackgroundColor="#95C323" Clicked="Button_Clicked"></Button>
         <Button CornerRadius="30" HeightRequest="50" WidthRequest="70" Margin="15, 10" 
-                TranslationY="25" Text="VENDE YA" FontSize="18" FontAttributes="Bold" BackgroundColor="#E9540D" ></Button>
+                TranslationY="20" Text="VENDE YA" FontSize="18" FontAttributes="Bold" BackgroundColor="#E9540D" ></Button>
 
     </StackLayout>
 

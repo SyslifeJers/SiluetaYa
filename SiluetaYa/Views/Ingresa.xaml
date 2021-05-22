@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SiluetaYa.Views.Ingresa"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="#C1D66D"
+             Padding="15,15,15,0">
+
+    <StackLayout>
+        <Frame CornerRadius="20" Margin="0,15" BackgroundColor="#95C323">
+            <Grid >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+
+                <Label Text="Ingresa el código del producto:" TextColor="White"
+                       FontSize="14" HorizontalOptions="Center" 
+                       Padding="10, 15"></Label>
+                <Entry Margin="20,50,20,210" BackgroundColor="white"></Entry>
+                <StackLayout  >
+                    <ContentView  >
+                        <DatePicker 
+                            Format="yyy MM d" TextColor="White" Margin="20,140,20,0"/>
+                    </ContentView>
+                </StackLayout>
+
+                <Label Text="¡Ver cómo!" FontSize="10" TextColor="white" Padding="200,90,0,10"></Label> 
+                <Label Text="Ingresa el horario y la fecha de inicio"
+                       TextColor="White" FontSize="12" 
+                       Padding="12, 120"></Label>
+                <StackLayout  >
+                    <ContentView>
+                            <DatePicker x:Name="DatePicker" 
+                             Format="h, tt" TextColor="White" Margin="20,200,20,0"/>
+                        </ContentView>
+                </StackLayout>
+            </Grid>
+        </Frame>
+
+        <Button CornerRadius="30" HeightRequest="50" Margin="25,0,25,80"  
+                Text="INICIAR REGISTRO" FontSize="18" FontAttributes="Bold" 
+                BackgroundColor="#FC9200" TranslationY="-50" Clicked="Button"></Button>
+
+    </StackLayout>
+
+
+</ContentPage>

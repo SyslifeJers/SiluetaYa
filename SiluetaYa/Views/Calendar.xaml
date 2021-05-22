@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SiluetaYa.Views.Calendar"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="#C1D66D">
+    <StackLayout Margin="20">
+        <Label Text="Bienvenido a tu" TextColor="White" HorizontalOptions="Center"
+                   FontAttributes="Bold" Padding="20,0" FontSize="Title"></Label>
+        <Label Text="calendario de tomas." TextColor="White" HorizontalOptions="Center"
+                   FontAttributes="Bold" Padding="0,10" FontSize="Title"></Label>
+
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="320" />
+            </Grid.RowDefinitions>
+            <Frame  BackgroundColor="#95C323" CornerRadius="20">
+                <StackLayout>
+                    <StackLayout >
+                        <ContentView>
+                            <DatePicker x:Name="startDatePicker"
+                                 Grid.Row="1"
+                                 Format="dddd, MMMM dd"
+                                 TextColor="White"/>
+                        </ContentView>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" TranslationY="81"></Frame>
+            <Frame BackgroundColor="#F7A015" TranslationY="187">
+                <Label Text="Silueta YA / Toma diaria
+                       8:15 am" TextColor="white"></Label>
+            </Frame>
+            <Frame TranslationY="290" CornerRadius="20" BackgroundColor="White" Margin="0,0,0,40">
+                <StackLayout Grid.Row="1">
+                    <Label Text="RECUERDA REALIZAR TUS 8 TOMAS" FontSize="12" TextColor="#0E4014"
+                           HorizontalOptions="Center" ></Label>
+                    <Label Text="DE AGUA PARA OBTENER MEJORES" FontSize="12" TextColor="#0E4014"
+                       HorizontalOptions="Center" />
+                    <Label Text="RESULTADOS" FontSize="12" TextColor="#0E4014"
+                       HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

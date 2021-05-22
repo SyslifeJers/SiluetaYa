@@ -11,6 +11,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\Mas.xaml.cs">
+      <DependentUpon>Mas.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Calendar.xaml.cs">
+      <DependentUpon>Calendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Ingresa.xaml.cs">
+      <DependentUpon>Ingresa.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Store.xaml.cs">
       <DependentUpon>Store.xaml</DependentUpon>
     </Compile>

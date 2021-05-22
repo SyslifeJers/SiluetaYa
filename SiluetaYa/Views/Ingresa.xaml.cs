@@ -8,18 +8,19 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace SiluetaYa.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AboutPage : ContentPage
+    public partial class Ingresa : ContentPage
     {
-        public AboutPage()
+        public Ingresa()
         {
             InitializeComponent();
         }
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Button(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Ingresa());
+            Navigation.PushAsync(new Calendar());
         }
     }
 }

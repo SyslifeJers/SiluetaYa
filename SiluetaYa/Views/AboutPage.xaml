@@ -19,12 +19,12 @@
     
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="5,40,5,10" VerticalOptions="FillAndExpand">
+        <StackLayout  >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <ContentView Padding="5,40,5,0" VerticalOptions="FillAndExpand">
                     <DatePicker x:Name="startDatePicker"
                     Grid.Row="1"
                     Format="dddd, MMMM dd"
@@ -34,7 +34,7 @@
             </StackLayout>
         </StackLayout>
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="60,24,30,24" Spacing="10">
+            <StackLayout Orientation="Vertical" Padding="30,24" Spacing="10">
                 <Label Text="Añade tu suplemento y" FontSize="16" TextColor="White"
                        HorizontalOptions="Center" TranslationY="140"/>
                 <Label Text="crearemos una alerta" FontSize="16" TextColor="White"
@@ -48,7 +48,7 @@
                         BackgroundColor="#FC9225"
                         CornerRadius="30"
                         TextColor="White" 
-                        Clicked="Button_Clicked2"
+                        Clicked="Button_Clicked"
                         />
             </StackLayout>
         </ScrollView>

@@ -7,7 +7,7 @@
              Padding="20,40">
 
     <ContentPage.BindingContext>
-        <vm:StoreViewModel />
+        <vm:AboutViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.Resources>
@@ -18,14 +18,13 @@
 
     <StackLayout >
         <Label TextColor="#003307" Text="PRUEBA NUESTROS PRODUCTOS" 
-              HorizontalOptions="Center" FontAttributes="Bold" FontSize="17"></Label>
+              HorizontalOptions="Center" FontAttributes="Bold" FontSize="15"></Label>
         <StackLayout >
             <Label TextColor="#003307" Text="Con Silueta YA siempre ganas" FontSize="Small" 
             HorizontalOptions="Center"></Label>
             <Label TextColor="#003307" Text="Silueta YA es 100% raíz de tecojote y" FontSize="Small" 
             HorizontalOptions="Center"></Label>
-            <Label TextColor="#003307" Text="
-            concentra todas sus bondades en un" FontSize="Small" 
+            <Label TextColor="#003307" Text="concentra todas sus bondades en un" FontSize="Small" 
             HorizontalOptions="Center"></Label>
             <Label TextColor="#003307" Text="producto único en el mundo." FontSize="Small" 
             HorizontalOptions="Center"></Label>

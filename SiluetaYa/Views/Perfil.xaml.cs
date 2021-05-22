@@ -15,7 +15,7 @@ namespace SiluetaYa.Views
         public Perfil()
         {
             InitializeComponent();
-            BindingContext = new PerfilViewModel();
+            BindingContext = new AboutViewModel();
         }
         private void Button_Clicked(object sender, EventArgs e)
         {

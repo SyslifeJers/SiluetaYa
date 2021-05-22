@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SiluetaYa.Views.PrimeraFase.Page3"
              NavigationPage.HasNavigationBar="false"
-             BackgroundColor="White" 
+             BackgroundColor="#5D810A" 
              Padding="100,50">
     <StackLayout >
         <Image Source="Logo.png" WidthRequest="150" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Margin="20,50"></Image>

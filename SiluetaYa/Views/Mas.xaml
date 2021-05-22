@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SiluetaYa.Views.Mas"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="#5F7119">
+    <Frame BackgroundColor="#C1D66D" CornerRadius="20" TranslationY="170">
+        <StackLayout Padding="20">
+            <Frame CornerRadius="30" BackgroundColor="White" BorderColor="#F6BE44" 
+                   Margin="110,0" TranslationY="10">
+                <Image Source="icon_about.png" HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="Start"></Image>
+            </Frame>
+            <Label Text="Ciudad de México" HorizontalOptions="CenterAndExpand" FontSize="Title" TextColor="#003307"/>
+        <Label Text="Eduardo M" HorizontalOptions="CenterAndExpand" FontSize="10" TextColor="#003307"/>
+        <Image Source="Logo.png" Margin="70,10,70,70"></Image>
+        <Button ImageSource="icon_about.png" Text="Enviar whatsapp" CornerRadius="30" 
+                BackgroundColor="#5F7119" TextColor="White" Margin="15,-40"></Button>
+    </StackLayout>
+    </Frame>
+
+</ContentPage>
